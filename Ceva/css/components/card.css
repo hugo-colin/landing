@@ -1,0 +1,25 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.card {
+  flex: 1 1 240px;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-size: 17px;
+  color: #666666;
+  line-height: 1.6;
+}
