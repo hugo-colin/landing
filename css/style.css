@@ -1,9 +1,8 @@
 @import url("components/container.css");
-@import url("components/avatar.css");
 @import url("components/button.css");
 @import url("components/banner.css");
 @import url("components/card.css");
-@import url("components/form.css");
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,3 +29,84 @@ a {
   text-decoration: none;
 }
 
+.campus-section {
+  padding: 72px 0 24px;
+}
+
+.campus-section h2 {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+
+.brochure-section {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 32px;
+  margin: 24px 0 72px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.brochure-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.apply-copy h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.apply-copy p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666666;
+}
+
+.typeform-wrapper {
+  max-height: 1200px;
+  opacity: 1;
+  overflow: hidden;
+  margin-top: 24px;
+  transition: opacity 0.3s ease, max-height 0.3s ease, margin-top 0.3s ease;
+}
+
+.typeform-wrapper.is-hidden {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+}
+
+.typeform-live {
+  min-height: 560px;
+}
+
+button.btn-primary {
+  border: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 90%;
+  }
+
+  .campus-section h2 {
+    font-size: 28px;
+  }
+
+  .brochure-section {
+    padding: 24px;
+    margin-bottom: 56px;
+  }
+
+  .brochure-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .apply-copy h2 {
+    font-size: 28px;
+  }
+}

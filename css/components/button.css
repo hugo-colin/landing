@@ -10,5 +10,5 @@
 
 .btn-primary:hover {
   background-color: #4b59dd;
-  transform: translateY(-1px);
+  transform: translateY(1px);
 }
